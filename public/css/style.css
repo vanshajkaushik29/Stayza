@@ -1,0 +1,274 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+color:#fe424d;
+font-size: 2rem;
+}
+
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* footer  */
+ .f-info-links a {
+    text-decoration: none;
+    color: #222222;
+} 
+
+ .f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+ } 
+
+  /* cards */
+
+   .listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+  }
+
+  .card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .card-body{
+    padding: 0 !important;
+  }
+
+  .card-text p{
+    font-weight: 400 !important;
+  }
+
+  .listing-link{
+    text-decoration: none;
+  } 
+
+/* card effect */
+
+ .card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity :0.2;
+    background-color:white;
+}  
+
+
+/* new page  */
+
+ .add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+} 
+
+
+/* edit button  */
+ .edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+} 
+
+/* show page  */
+
+ .show-img{
+    height: 30vh;
+    object-fit: cover;
+}
+
+
+.btns{
+    display: flex;
+    gap: 1rem;
+} 
+
+ edit-btn{
+    padding: 6px 14px;   /* smaller, clean button */
+     font-size: 14px;
+} 
+
+ .show-card{
+    padding-left: 0;
+    padding-right: 0;
+} 
+
+
+/* Simple hero text */
+.hero-text {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin-bottom: 2rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Fix for All Listings heading - add margin top */
+h1 {
+    margin-top: 3rem !important;
+    margin-bottom: 1.5rem !important;
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Features Section - Updated with new feature */
+.features-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    border-radius: 20px;
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.features-section h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #007bff;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: white;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background: #f0f7ff;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.feature h3 {
+    margin: 0 0 0.5rem;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.feature p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-text {
+        padding: 2rem 1rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .features-section {
+        margin: 1rem auto;
+        padding: 1.5rem 1rem;
+    }
+    
+    .features-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .features-grid {
+        gap: 1rem;
+    }
+    
+    .feature {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    h1 {
+        margin-top: 2rem !important;
+        font-size: 1.8rem;
+    }
+}
