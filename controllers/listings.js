@@ -28,16 +28,32 @@ module.exports.showListing = async (req,res)=>{
 };
 
 
+// module.exports.createListing = async (req, res) => {
+//    let listing = req.body.listing;
+//    const newListing = new Listing(listing);
+
+//    let url = req.file.path;
+//    let filename = req.file.filename;
+
+//    newListing.image = { url, filename };
+//    newListing.owner = req.user._id;
+
+//    await newListing.save();
+//    req.flash("success", "New Listing Created!");
+//    res.redirect("/listings");
+// };
+
 module.exports.createListing = async (req, res) => {
    let listing = req.body.listing;
    const newListing = new Listing(listing);
-
-   let url = req.file.path;
-   let filename = req.file.filename;
-
-   newListing.image = { url, filename };
+   
+   if (req.file) {  
+     let url = req.file.path;
+     let filename = req.file.filename;
+     newListing.image = { url, filename };
+   }
+   
    newListing.owner = req.user._id;
-
    await newListing.save();
    req.flash("success", "New Listing Created!");
    res.redirect("/listings");
