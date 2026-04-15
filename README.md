@@ -70,9 +70,6 @@ npm start
 cd client
 npm install
 npm start
-📸 Screenshots
-
-(Add project screenshots here for better recruiter impact)
 
 👨‍💻 Author
 
